@@ -1,0 +1,94 @@
+[gd_scene load_steps=5 format=3 uid="uid://ipv33er5fmvl"]
+
+[ext_resource type="FontFile" uid="uid://dusj76yp2rraf" path="res://Chewy-Regular.ttf" id="1_b07fi"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_siod4"]
+bg_color = Color(6.858632e-07, 0.42599288, 0.05911167, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(4.4220127e-07, 0.19030294, 0.039993152, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+corner_detail = 9
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b07fi"]
+bg_color = Color(0, 0.2669144, 0.0760426, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x6lt7"]
+bg_color = Color(1, 1, 1, 1)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="."]
+z_index = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -207.5
+offset_top = 11.5
+offset_right = 207.5
+offset_bottom = 104.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_b07fi")
+theme_override_font_sizes/font_size = 67
+theme_override_styles/normal = SubResource("StyleBoxFlat_siod4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_b07fi")
+text = "Options"
+
+[node name="Button2" type="Button" parent="."]
+z_index = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -207.5
+offset_top = -131.5
+offset_right = 207.5
+offset_bottom = -38.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_b07fi")
+theme_override_font_sizes/font_size = 67
+theme_override_styles/normal = SubResource("StyleBoxFlat_siod4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_x6lt7")
+text = "Play"
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+
+[node name="Label" type="Label" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.48200002
+anchor_right = 0.5
+anchor_bottom = 0.48200002
+offset_left = -72.0
+offset_top = -270.33603
+offset_right = 107.0
+offset_bottom = -141.33603
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = ExtResource("1_b07fi")
+theme_override_font_sizes/font_size = 115
+text = "TAG"
+horizontal_alignment = 1
+vertical_alignment = 1

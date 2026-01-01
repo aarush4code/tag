@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgqo2tbjow8sd"]
+
+[ext_resource type="Texture2D" uid="uid://cdgsy8vlgiu00" path="res://036d3180c23a28850e5634d12dfb5e01.jpg" id="1_tiovm"]
+
+[node name="Node" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_tiovm")
