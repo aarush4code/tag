@@ -1,25 +1,54 @@
-[gd_scene load_steps=5 format=3 uid="uid://ipv33er5fmvl"]
+[gd_scene load_steps=9 format=3 uid="uid://ipv33er5fmvl"]
 
 [ext_resource type="FontFile" uid="uid://dusj76yp2rraf" path="res://Chewy-Regular.ttf" id="1_b07fi"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_siod4"]
-bg_color = Color(6.858632e-07, 0.42599288, 0.05911167, 1)
-border_width_left = 5
-border_width_top = 5
-border_width_right = 5
-border_width_bottom = 5
-border_color = Color(4.4220127e-07, 0.19030294, 0.039993152, 1)
-corner_radius_top_left = 15
-corner_radius_top_right = 15
-corner_radius_bottom_right = 15
-corner_radius_bottom_left = 15
-corner_detail = 9
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b07fi"]
-bg_color = Color(0, 0.2669144, 0.0760426, 1)
+[ext_resource type="Script" uid="uid://dw2j57iujoxhl" path="res://main_menu.gd" id="1_x2ps0"]
+[ext_resource type="Texture2D" uid="uid://brvfflpf17s1u" path="res://Screenshot 2026-02-27 215059.png" id="2_x6lt7"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x6lt7"]
-bg_color = Color(1, 1, 1, 1)
+bg_color = Color(0.30980393, 0.6431373, 0.8, 0.78431374)
+border_width_left = 7
+border_width_top = 7
+border_width_right = 7
+border_width_bottom = 7
+border_color = Color(0, 0.40803427, 0.6391915, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+shadow_size = 16
+shadow_offset = Vector2(1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x2ps0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rlxw3"]
+bg_color = Color(0.16971362, 0.41231358, 0.52450436, 1)
+border_width_left = 7
+border_width_top = 7
+border_width_right = 7
+border_width_bottom = 7
+border_color = Color(0.30980393, 0.6431373, 0.8, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+shadow_size = 16
+shadow_offset = Vector2(1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5kukc"]
+bg_color = Color(0.4145892, 0.73241824, 0.8876023, 1)
+border_width_left = 7
+border_width_top = 7
+border_width_right = 7
+border_width_bottom = 7
+border_color = Color(0, 0.40784314, 0.6392157, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_x6lt7"]
+texture = ExtResource("2_x6lt7")
+modulate_color = Color(0.4857033, 0.4857036, 0.4857034, 1)
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -28,67 +57,66 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="Button" type="Button" parent="."]
-z_index = 1
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -207.5
-offset_top = 11.5
-offset_right = 207.5
-offset_bottom = 104.5
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_fonts/font = ExtResource("1_b07fi")
-theme_override_font_sizes/font_size = 67
-theme_override_styles/normal = SubResource("StyleBoxFlat_siod4")
-theme_override_styles/hover = SubResource("StyleBoxFlat_b07fi")
-text = "Options"
-
-[node name="Button2" type="Button" parent="."]
-z_index = 1
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -207.5
-offset_top = -131.5
-offset_right = 207.5
-offset_bottom = -38.5
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_fonts/font = ExtResource("1_b07fi")
-theme_override_font_sizes/font_size = 67
-theme_override_styles/normal = SubResource("StyleBoxFlat_siod4")
-theme_override_styles/hover = SubResource("StyleBoxFlat_x6lt7")
-text = "Play"
-
-[node name="Panel" type="Panel" parent="."]
-layout_mode = 1
+script = ExtResource("1_x2ps0")
 
 [node name="Label" type="Label" parent="."]
+z_index = 1
+y_sort_enabled = true
 texture_filter = 1
 layout_mode = 1
-anchors_preset = -1
+anchors_preset = 5
 anchor_left = 0.5
-anchor_top = 0.48200002
 anchor_right = 0.5
-anchor_bottom = 0.48200002
-offset_left = -72.0
-offset_top = -270.33603
-offset_right = 107.0
-offset_bottom = -141.33603
+offset_left = -127.0
+offset_right = 127.0
+offset_bottom = 296.0
 grow_horizontal = 2
-grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_constants/line_spacing = 0
+theme_override_constants/outline_size = 19
 theme_override_fonts/font = ExtResource("1_b07fi")
 theme_override_font_sizes/font_size = 115
-text = "TAG"
+text = "Hop For Your Life
+"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+z_index = 2
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -222.75
+offset_top = -97.5
+offset_right = 222.75
+offset_bottom = 97.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 18
+theme_override_fonts/font = ExtResource("1_b07fi")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_x6lt7")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_x2ps0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rlxw3")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5kukc")
+text = "PLAY"
+
+[node name="Panel" type="Panel" parent="."]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -3.0
+offset_top = -4.0
+offset_right = -3.0
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_x6lt7")
+
+[connection signal="pressed" from="Button" to="." method="_on_start_pressed"]
